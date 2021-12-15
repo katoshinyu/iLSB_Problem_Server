@@ -54,7 +54,7 @@ def AnaumeMake(sen_list, AnaumeWord):
 
 #ここでの関数の処理の結果がサーバー側に渡される
 def ProblemOutPut(ProblemData, AnswerData):
-    problem_path = "/Users/katoushinyu/Desktop/iLSB_Problem_Server/ProblemResource/answer_data.json"
+    problem_path = "ProblemResource/answer_data.json"
 
     #答えが格納された配列をJSONデータにし、更に見やすいようにインデントを設ける
     answer_json = json.dumps(AnswerData, ensure_ascii=False)
