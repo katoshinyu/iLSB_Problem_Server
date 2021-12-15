@@ -1,81 +1,66 @@
 [
 	{
 		"QuestionID": 9999,
-		"QuestionKeywordID": 4,
-		"KeywordID": 16,
-		"title": "火山ガス",
-		"parent": 1,
-		"QKeyType": "undefined",
-		"nodeX": 544,
-		"nodeY": 490,
+		"QuestionKeywordID": 5,
+		"KeywordID": 7,
+		"title": "海面上昇",
+		"parent": 0,
+		"QKeyType": "現象",
+		"nodeX": 654,
+		"nodeY": 450,
 		"nodeWidth": 150,
 		"nodeHeight": 50
 	},
 	[
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 4,
-			"KeywordID": 29,
-			"title": "揮発性成分",
+			"QuestionKeywordID": 5,
+			"KeywordID": 17,
+			"title": "台風",
+			"parent": 21,
+			"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 5,
+			"KeywordID": 18,
+			"title": "高潮",
+			"parent": 21,
+			"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 5,
+			"KeywordID": 19,
+			"title": "氷河",
 			"parent": null,
-			"URL": "https://www.data.jma.go.jp/svd/vois/data/tokyo/rovdm/Miyakejima_rovdm/miyakejima_gas.html"
+			"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 4,
-			"KeywordID": 30,
-			"title": "死亡事故",
+			"QuestionKeywordID": 5,
+			"KeywordID": 20,
+			"title": "氷床",
 			"parent": null,
-			"URL": "https://www.data.jma.go.jp/svd/vois/data/tokyo/rovdm/Miyakejima_rovdm/miyakejima_gas.html"
+			"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 4,
-			"KeywordID": 31,
-			"title": "カメルーン",
-			"parent": 30,
-			"URL": "https://www.data.jma.go.jp/svd/vois/data/tokyo/rovdm/Miyakejima_rovdm/miyakejima_gas.html"
-		},
-		{
-			"QuestionID": 9999,
-			"QuestionKeywordID": 4,
-			"KeywordID": 32,
-			"title": "インドネシア",
-			"parent": 30,
-			"URL": "https://www.data.jma.go.jp/svd/vois/data/tokyo/rovdm/Miyakejima_rovdm/miyakejima_gas.html"
-		},
-		{
-			"QuestionID": 9999,
-			"QuestionKeywordID": 4,
-			"KeywordID": 33,
-			"title": "二酸化硫黄",
+			"QuestionKeywordID": 5,
+			"KeywordID": 21,
+			"title": "海水",
 			"parent": null,
-			"URL": "https://www.data.jma.go.jp/svd/vois/data/tokyo/rovdm/Miyakejima_rovdm/miyakejima_gas.html"
-		},
-		{
-			"QuestionID": 9999,
-			"QuestionKeywordID": 4,
-			"KeywordID": 34,
-			"title": "三宅島",
-			"parent": null,
-			"URL": "https://www.data.jma.go.jp/svd/vois/data/tokyo/rovdm/Miyakejima_rovdm/miyakejima_gas.html"
+			"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
 		}
 	],
 	[
-		"火山",
-		"火山噴出物",
-		"マグマ",
-		"溶岩",
-		"火山ガス",
-		"プレート",
-		"マントル",
-		"大陸プレート",
-		"海洋プレート",
-		"溶岩ドーム",
-		"パホイホイ溶岩",
-		"カルデラ",
-		"カナリア諸島",
-		"二酸化硫黄",
-		"岩屑"
+		"地球温暖化",
+		"温室効果ガス",
+		"化石燃料",
+		"京都議定書",
+		"気候変動",
+		"海面上昇",
+		"産業革命",
+		"再生可能エネルギー"
 	]
 ]
