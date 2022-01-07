@@ -1,12 +1,16 @@
 #文頭の接続詞を省く処理
 def Setsuzoku(sen):
-    re_junc = ['しかし、', 'または、', 'ほかに、', 'なお、', 'しかし','また', 'このため']
+    re_junc = ['しかし', 'または', 'ほかに', 'なお', 'また', 'このため']
 
     sen_modify = list()
     for junc in re_junc:
         if junc in sen[0:5]:
             sen_modify = sen.split(junc, 1)
             sen = sen_modify[-1]
+
+            if '、' in sen[1]:
+                sen_modify = sen.split('、', 1)
+                sen = sen_modify[-1]
 
         else:
             continue
