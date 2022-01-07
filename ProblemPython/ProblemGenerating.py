@@ -110,7 +110,7 @@ def ProblemOutPut(ProblemData, AnswerData):
         print(pro_result)
 
 def OutputProblem(problem, answer):
-    answer_path = "../ProblemResource/answer_data.json"
+    answer_path = "ProblemResource/answer_data.json"
 
     answer_json = json.dumps(answer, ensure_ascii = False)
     with open(answer_path, 'w') as f:

@@ -4,7 +4,7 @@ import ProblemDataProcess
 import json
 
 #iLSBからの問題生成に必要な内容が記述されたjsonファイル
-jf = "../ProblemResource/mondai_resource.json"
+jf = "ProblemResource/mondai_resource.json"
 
 #JSONデータを辞書型として扱えるように
 with open(jf,"r",encoding="utf-8") as mondai_txt:

@@ -7,6 +7,10 @@ def Setsuzoku(sen):
         if junc in sen[0:5]:
             sen_modify = sen.split(junc, 1)
             sen = sen_modify[-1]
+            if '、' in sen[0:1]:
+                sen_modify = sen.split('、', 1)
+                sen = sen_modify[-1]
+
 
             if '、' in sen[1]:
                 sen_modify = sen.split('、', 1)
@@ -26,3 +30,8 @@ def EscapeKey(sen):
         sen = sen_modify[-1]
 
     return(sen)
+
+'''def Brackets(sen):
+    re_braket = ['(', '（', '[']
+    sen_modify = list()
+    if sen[]'''
