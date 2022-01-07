@@ -1,9 +1,10 @@
 var express = require('express');
 var ejs = require("ejs");
 var bodyParser = require('body-parser');
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 var fs = require("fs");
 
-const Pypath = "ProblemMain.py"
+const Pypath = "ProblemPython/ProblemMain.py"
 
 var {PythonShell} = require('python-shell');
 var pyshell = new PythonShell(Pypath, {mode: 'text'});
@@ -17,6 +18,12 @@ app.use(express.static('public'));
 
 
 app.use(bodyParser.json());
+
+//CSVファイルに関して
+/*const csvWriter = createCsvWriter({
+    path: 'ProblemResource/problem.csv',       // 保存する先のパス(すでにファイルがある場合は上書き保存)
+    header: ['PROBLEM', 'ANSWER']  // 出力する項目(ここにない項目はスキップされる)
+});*/
 
 json = {
     '【1】':'kato',
@@ -68,13 +75,15 @@ app.post('/', function(req, res){
             let answer = fs.readFileSync(AnswerPath, 'UTF-8');
             answer = JSON.parse(answer)
 
+            //csvWriter.writeRecords(masterData)
 
             masterData.push(answer)
 
             let mondai = JSON.stringify(masterData);
+            let mondai_txt = JSON.stringify(masterData, null, '\t')
 
             if (fs.existsSync('ProblemResource/mondai_data.json')) fs.unlinkSync('ProblemResource/mondai_data.json') 
-            fs.writeFileSync('ProblemResource/mondai_data.json', mondai);
+            fs.writeFileSync('ProblemResource/mondai_data.json', mondai_txt);
 
             console.log(JSON.parse(mondai))
 

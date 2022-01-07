@@ -10,7 +10,11 @@ def Setsuzoku(sen):
             if '、' in sen[0:1]:
                 sen_modify = sen.split('、', 1)
                 sen = sen_modify[-1]
-            
+
+
+            if '、' in sen[1]:
+                sen_modify = sen.split('、', 1)
+                sen = sen_modify[-1]
 
         else:
             continue
