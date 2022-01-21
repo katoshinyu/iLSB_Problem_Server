@@ -1,8 +1,8 @@
 import pandas as pd
 import ProblemGenerating
+import random
 
-ProblemList = list()
-AnswerList = list()
+
 
 def ProblemProcess(mondai_json):
 
@@ -45,7 +45,8 @@ def ProblemProcess(mondai_json):
         id_Qkey.append(id_Qkey_title)
 
         #QurrentQKeyを処理にいれる
-        RelationJudge(all_title, id_sub, id_Qkey)
+        ProblemInformation = RelationJudge(all_title, id_sub, id_Qkey)
+        return ProblemInformation
 
 def RelationJudge(all_title, id_sub, id_Qkey):
 
@@ -55,7 +56,7 @@ def RelationJudge(all_title, id_sub, id_Qkey):
 
         #リストは＋を演算子として中身を追加しないと、新しいリストとして定義されない。appendとかだと変数を連携してしまう。
         #id_all_title = id_sub[0] + [main_title]
-
+        ProblemList = list()
         #ここからURLをSentenceMakeの関数にURLを送ってテキストを引っ張ってきてもらう処理
         for j in range(len(id_sub[0])):
 
@@ -79,8 +80,9 @@ def RelationJudge(all_title, id_sub, id_Qkey):
                 if (nan_none == 'nan') or (nan_none == 'None'):
                         problem_list = ProblemGenerating.AnaumeMake(sen_part, id_sub[0][j])
                         Rekey_list = ProblemGenerating.PriorityProblem(all_title, problem_list)
-                        ProblemList.append(RekeyJudge(Rekey_list))
-                        AnswerList.append(id_sub[0][j])
+                        [Finish_list, ProType] = RekeyJudge(Rekey_list)
+                        ProblemInf = {"problem":Finish_list, "Answer":id_sub[0][j], "ProType":ProType}
+                        ProblemList.append(ProblemInf)
                         #ProblemGenerating.OutputProblem(RekeyJudge(Rekey_list))
                         #print(RekeyJudge(Rekey_list)+"【"+id_sub[0][j]+"】")
 
@@ -103,25 +105,27 @@ def RelationJudge(all_title, id_sub, id_Qkey):
                         if InKey_Problem:
                                 if len(InKey_Problem) == 1:
                                         #ProblemGenerating.OutputProblem(InKey_Problem[0])
-                                        ProblemList.append(InKey_Problem[0])
-                                        AnswerList.append(id_sub[0][j])
+                                        ProblemInf = {"problem":InKey_Problem[0], "Answer":id_sub[0][j], "ProType":"Inclusion"}
+                                        ProblemList.append(ProblemInf)
                                         #print(InKey_Problem[0]+"【"+id_sub[0][j]+"】")
                                 else:
                                         Rekey_list = ProblemGenerating.PriorityProblem(all_title, InKey_Problem)
-                                        ProblemList.append(RekeyJudge(Rekey_list))
-                                        AnswerList.append(id_sub[0][j])
+                                        [Finish_list, ProType] = RekeyJudge(Rekey_list)
+                                        ProblemInf = {"problem":Finish_list, "Answer":id_sub[0][j], "ProType":ProType}
+                                        ProblemList.append(ProblemInf)
                                         #ProblemGenerating.OutputProblem(RekeyJudge(Rekey_list))
                                         #print(RekeyJudge(Rekey_list)+"【"+id_sub[0][j]+"】")
 
                         else:
                                 Rekey_list = ProblemGenerating.PriorityProblem(all_title, problem_list)
-                                ProblemList.append(RekeyJudge(Rekey_list))
-                                AnswerList.append(id_sub[0][j])
+                                [Finish_list, ProType] = RekeyJudge(Rekey_list)
+                                ProblemInf = {"problem":Finish_list, "Answer":id_sub[0][j], "ProType":ProType}
+                                ProblemList.append(ProblemInf)
                                 #ProblemGenerating.OutputProblem(RekeyJudge(Rekey_list))
                                 #print(RekeyJudge(Rekey_list)+"【"+id_sub[0][j]+"】")
 
-
-        ProblemGenerating.OutputProblem(ProblemList, AnswerList)
+        #print(ProblemList)
+        return ProblemList
 
 
 
@@ -145,9 +149,12 @@ def InclusionJudge(parent_list, title_list, nowID):
 def RekeyJudge(Rekey_list):
         if len(Rekey_list) > 1:
         #print(childProblem(Rekey_list))
-                return ProblemGenerating.childProblem(Rekey_list)
+                return ParentProblem(Rekey_list)
 
         elif len(Rekey_list) == 1:
         #print(Rekey_list[0])
-                return Rekey_list[0]
+                return [Rekey_list[0],"myRepo"]
 
+#もう親ノードのリポジトリを使うしかない場合
+def ParentProblem(problem_list):
+        return [random.choice(problem_list),"parRepo"]

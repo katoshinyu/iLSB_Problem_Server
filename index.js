@@ -25,14 +25,6 @@ app.use(bodyParser.json());
     header: ['PROBLEM', 'ANSWER']  // 出力する項目(ここにない項目はスキップされる)
 });*/
 
-json = {
-    '【1】':'kato',
-    '【2】':'sample',
-    '【3】':'example',
-    '【4】':'common',
-    '【5】':'dousitamonka',
-}
-
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
@@ -46,7 +38,6 @@ app.get('/', (req, res)=>{
     {
         title: '問題生成',
         content: msg,
-        data: json,
     });
 });
 
@@ -64,6 +55,7 @@ app.post('/', function(req, res){
     fs.writeFileSync(JSONFILEPATH, mondai_json);//同期処理
 
     var masterData = [];
+    let ProblemList = [];
 
     PythonShell.run(Pypath, 'UTF-8',
         function(err, data){
@@ -71,44 +63,27 @@ app.post('/', function(req, res){
 
             masterData.push(data)
 
-            let AnswerPath = 'ProblemResource/answer_data.json'
-            let answer = fs.readFileSync(AnswerPath, 'UTF-8');
-            answer = JSON.parse(answer)
+            let ProblemPath = 'ProblemResource/ProblemInformation.json';
+            let ProblemJson = fs.readFileSync(ProblemPath, 'UTF-8');
+            let ProblemJsonData = JSON.parse(ProblemJson)
 
             //csvWriter.writeRecords(masterData)
 
-            masterData.push(answer)
+            ProblemList.push(ProblemJsonData)
 
-            let mondai = JSON.stringify(masterData);
-            let mondai_txt = JSON.stringify(masterData, null, '\t')
+            let ProblemData = JSON.stringify(ProblemList);
+            let Problem_txt = JSON.stringify(ProblemData, null, '\t')
 
             if (fs.existsSync('ProblemResource/mondai_data.json')) fs.unlinkSync('ProblemResource/mondai_data.json') 
-            fs.writeFileSync('ProblemResource/mondai_data.json', mondai_txt);
+            fs.writeFileSync('ProblemResource/mondai_data.json', Problem_txt);
 
-            console.log(JSON.parse(mondai))
+            console.log("レスポンス後の返信")
+            console.log(masterData)
+            console.log(JSON.parse(ProblemData))
 
-            res.json(JSON.parse(mondai))
+            res.json(JSON.parse(ProblemData))
 
         });
-
-    /*pyshell.send("");
-
-    pyshell.on('message', function(data){
-        console.log(data);
-
-        var MONDAIFILEPATH = "mondai_data.json"
-        var mondai_data = fs.readFileSync(MONDAIFILEPATH, "utf8");
-        var mondai_data_json = JSON.stringify(mondai_data, null , '\t');
-
-        console.log(mondai_data_json);
-        var mondai_data = JSON.stringify(data, null , '\t');
-
-        res.end();
-    });*/
-
-
-
-    //res.json(text1);
 
 });
 

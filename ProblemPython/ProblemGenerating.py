@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import ProblemRemove
 import json
 import csv
-import random
+
 
 
 #答えのリスト初期設定
@@ -49,7 +49,7 @@ def AnaumeMake(sen_list, AnaumeWord):
             if not AnaumeWord in sen_problem:
                 sen_problem = sen_list[sen]
             #フィルターをかけ終わったらあとは穴埋めにするだけ
-            problem_sen = str(sen_problem.replace(AnaumeWord, '（　　　）'))
+            problem_sen = sen_problem
             '''if (sen !=0) and (sen != len(sen_list)-1):
                 problem_sen = sen_list[sen-1] + problem_sen + sen_list[sen+1]'''
             #problem_pro = '{' + 'PROBLEM:' + '"' + problem_sen  + '"' +',' + 'ANSWER:'+ '"' + AnaumeWord +  '"' +'}'
@@ -62,7 +62,6 @@ def AnaumeMake(sen_list, AnaumeWord):
             continue
 
     return problem_list
-    ProblemOutPut(problem_list, answer_list)
 
 
 #キーワードレポジトリのキーワードがどれくらい含まれているかを判別する関数（包含関係もこの関数で判断）
@@ -91,12 +90,10 @@ def PriorityProblem(ReKey_list, problem_list):
     else:
         return problem_list
 
-#もう子ノードを使うしかない場合
-def childProblem(problem_list):
-    return(random.choice(problem_list))
+
 
 #ここでの関数の処理の結果がサーバー側に渡される
-def ProblemOutPut(ProblemData, AnswerData):
+'''def ProblemOutPut(ProblemData, AnswerData):
     problem_path = "ProblemResource/answer_data.json"
 
     #答えが格納された配列をJSONデータにし、更に見やすいようにインデントを設ける
@@ -117,4 +114,4 @@ def OutputProblem(problem, answer):
             f.writelines(answer_json)
 
     for pro_result in problem:
-        print(pro_result)
+        print(pro_result)'''
