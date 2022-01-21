@@ -55,7 +55,6 @@ app.post('/', function(req, res){
     fs.writeFileSync(JSONFILEPATH, mondai_json);//同期処理
 
     var masterData = [];
-    let ProblemList = [];
 
     PythonShell.run(Pypath, 'UTF-8',
         function(err, data){
@@ -69,15 +68,12 @@ app.post('/', function(req, res){
 
             //csvWriter.writeRecords(masterData)
 
-            ProblemList.push(ProblemJsonData)
-
-            let ProblemData = JSON.stringify(ProblemList);
+            let ProblemData = JSON.stringify(ProblemJsonData);
             let Problem_txt = JSON.stringify(ProblemData, null, '\t')
 
             if (fs.existsSync('ProblemResource/mondai_data.json')) fs.unlinkSync('ProblemResource/mondai_data.json') 
             fs.writeFileSync('ProblemResource/mondai_data.json', Problem_txt);
 
-            console.log("レスポンス後の返信")
             console.log(masterData)
             console.log(JSON.parse(ProblemData))
 
