@@ -58,8 +58,8 @@ def AnaumeMake(sen_list, AnaumeWord):
             answer_list.append(AnaumeWord)
 
 
-        else:
-            continue
+    if(problem_list == []):
+        problem_list = 'NoneProblem'
 
     return problem_list
 

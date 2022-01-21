@@ -11,6 +11,9 @@ def ProblemProcess(mondai_json):
         df_sub = pd.DataFrame(mondai_json[1])
         df_Qkey = mondai_json[2]
 
+        #親課題が合った場合読み込む
+        df_parentKey = mondai_json[3]
+
         #QurrentQKeyを処理にいれるための準備
         main_title = mondai_json[0]['title']
 
@@ -39,16 +42,15 @@ def ProblemProcess(mondai_json):
         #親課題を含むリポジトリ群の定義
         for all_key in range(len(df_sub)):
                 id_all_title.append(df_sub['title'][all_key])
-
         all_title = id_all_title + [main_title]
         id_Qkey.append(id_Qkey_KeyID)
         id_Qkey.append(id_Qkey_title)
 
         #QurrentQKeyを処理にいれる
-        ProblemInformation = RelationJudge(all_title, id_sub, id_Qkey)
+        ProblemInformation = RelationJudge(all_title, id_sub, id_Qkey, df_parentKey)
         return ProblemInformation
 
-def RelationJudge(all_title, id_sub, id_Qkey):
+def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey):
 
         '''id_title = id_sub[0]
         id_URL = id_sub[1]
@@ -79,8 +81,11 @@ def RelationJudge(all_title, id_sub, id_Qkey):
 
                 if (nan_none == 'nan') or (nan_none == 'None'):
                         problem_list = ProblemGenerating.AnaumeMake(sen_part, id_sub[0][j])
-                        Rekey_list = ProblemGenerating.PriorityProblem(all_title, problem_list)
-                        [Finish_list, ProType] = RekeyJudge(Rekey_list)
+                        if problem_list == 'NoneProblem':
+                                Finish_list = 'NoneProblem'
+                        else:
+                                Rekey_list = ProblemGenerating.PriorityProblem(all_title, problem_list)
+                                [Finish_list, ProType] = RekeyJudge(Rekey_list, df_parentKey)
                         ProblemInf = {"problem":Finish_list, "Answer":id_sub[0][j], "ProType":ProType}
                         ProblemList.append(ProblemInf)
                         #ProblemGenerating.OutputProblem(RekeyJudge(Rekey_list))
@@ -97,6 +102,7 @@ def RelationJudge(all_title, id_sub, id_Qkey):
                                         InKey_list.append(id_Qkey[1][KeyID])
 
                         problem_list = ProblemGenerating.AnaumeMake(sen_part, id_sub[0][j])
+                        
 
                         #包含関係のあるキーワードが含まれる問題を判別
                         InKey_Problem = ProblemGenerating.PriorityProblem(InKey_list, problem_list)
@@ -104,21 +110,20 @@ def RelationJudge(all_title, id_sub, id_Qkey):
                         #包含関係のキーワードが問題に含まれていた場合
                         if InKey_Problem:
                                 if len(InKey_Problem) == 1:
-                                        #ProblemGenerating.OutputProblem(InKey_Problem[0])
                                         ProblemInf = {"problem":InKey_Problem[0], "Answer":id_sub[0][j], "ProType":"Inclusion"}
                                         ProblemList.append(ProblemInf)
-                                        #print(InKey_Problem[0]+"【"+id_sub[0][j]+"】")
                                 else:
                                         Rekey_list = ProblemGenerating.PriorityProblem(all_title, InKey_Problem)
-                                        [Finish_list, ProType] = RekeyJudge(Rekey_list)
+                                        [Finish_list, ProType] = RekeyJudge(Rekey_list, df_parentKey)
                                         ProblemInf = {"problem":Finish_list, "Answer":id_sub[0][j], "ProType":ProType}
                                         ProblemList.append(ProblemInf)
-                                        #ProblemGenerating.OutputProblem(RekeyJudge(Rekey_list))
-                                        #print(RekeyJudge(Rekey_list)+"【"+id_sub[0][j]+"】")
-
+                                        
                         else:
-                                Rekey_list = ProblemGenerating.PriorityProblem(all_title, problem_list)
-                                [Finish_list, ProType] = RekeyJudge(Rekey_list)
+                                if problem_list == 'NoneProblem':
+                                        Finish_list = 'NoneProblem'
+                                else:
+                                        Rekey_list = ProblemGenerating.PriorityProblem(all_title, problem_list)
+                                        [Finish_list, ProType] = RekeyJudge(Rekey_list, df_parentKey)
                                 ProblemInf = {"problem":Finish_list, "Answer":id_sub[0][j], "ProType":ProType}
                                 ProblemList.append(ProblemInf)
                                 #ProblemGenerating.OutputProblem(RekeyJudge(Rekey_list))
@@ -126,9 +131,6 @@ def RelationJudge(all_title, id_sub, id_Qkey):
 
         #print(ProblemList)
         return ProblemList
-
-
-
 
 def InclusionJudge(parent_list, title_list, nowID):
         InKey_list = list()
@@ -146,15 +148,22 @@ def InclusionJudge(parent_list, title_list, nowID):
         return InKey_list
 
 
-def RekeyJudge(Rekey_list):
+def RekeyJudge(Rekey_list, df_parentKey):
         if len(Rekey_list) > 1:
         #print(childProblem(Rekey_list))
-                return ParentProblem(Rekey_list)
+                return ParentProblem(Rekey_list, df_parentKey)
 
         elif len(Rekey_list) == 1:
         #print(Rekey_list[0])
                 return [Rekey_list[0],"myRepo"]
 
 #もう親ノードのリポジトリを使うしかない場合
-def ParentProblem(problem_list):
-        return [random.choice(problem_list),"parRepo"]
+def ParentProblem(problem_list,df_parentKey):
+        Parkey_list = ProblemGenerating.PriorityProblem(df_parentKey, problem_list)
+        if len(Parkey_list) == 0:
+                return [Parkey_list[0], "parRepo"]
+        else:
+                return [random.choice(Parkey_list),"parRepo"]
+
+
+
