@@ -59,9 +59,13 @@ def AnaumeMake(sen_list, AnaumeWord):
 
 
     if(problem_list == []):
-        problem_list = 'NoneProblem'
+        problem_list = NonProblemProcess()
 
     return problem_list
+
+#pタグで問題が生成, 出来なかった場合の処理
+def NonProblemProcess():
+    return 'NoneProblem'
 
 
 #キーワードレポジトリのキーワードがどれくらい含まれているかを判別する関数（包含関係もこの関数で判断）
@@ -85,33 +89,7 @@ def PriorityProblem(ReKey_list, problem_list):
             Max_problem.append(sen)
 
     if Max_judge > 0:
-        #print(Max_judge)
         return Max_problem
     else:
         return problem_list
 
-
-
-#ここでの関数の処理の結果がサーバー側に渡される
-'''def ProblemOutPut(ProblemData, AnswerData):
-    problem_path = "ProblemResource/answer_data.json"
-
-    #答えが格納された配列をJSONデータにし、更に見やすいようにインデントを設ける
-    answer_json = json.dumps(AnswerData, ensure_ascii=False)
-
-    with open(problem_path, 'w') as f:
-            f.writelines(answer_json)
-
-    #問題文生成結果
-    for pro_result in ProblemData:
-        print(pro_result)
-
-def OutputProblem(problem, answer):
-    answer_path = "ProblemResource/answer_data.json"
-
-    answer_json = json.dumps(answer, ensure_ascii = False)
-    with open(answer_path, 'w') as f:
-            f.writelines(answer_json)
-
-    for pro_result in problem:
-        print(pro_result)'''
