@@ -2,10 +2,12 @@ import pandas as pd
 import ProblemGenerating
 import random
 
+GlobalURL = ''
 
 
-def ProblemProcess(mondai_json):
 
+def ProblemProcess(mondai_json, d_type):
+        GlobalURL = mondai_json
         #課題, リポジトリのキーワードの情報, 展開されている課題の情報を分ける
         df_main = mondai_json[0]
         df_sub = pd.DataFrame(mondai_json[1])
@@ -47,7 +49,7 @@ def ProblemProcess(mondai_json):
         id_Qkey.append(id_Qkey_title)
 
         #QurrentQKeyを処理にいれる
-        ProblemList = RelationJudge(all_title, id_sub, id_Qkey, df_parentKey)
+        ProblemList = RelationJudge(all_title, id_sub, id_Qkey, df_parentKey, d_type)
 
         #同文一致処理
         AskText = [];
@@ -79,7 +81,11 @@ def ProblemProcess(mondai_json):
                 ProblemInf = {"Problem":ProblemBrackets, "Answer":AskAnswer[FiNum],"Anaume":ProblemAnaume}
                 ProblemList.append(ProblemInf)
         #最終的な値を返す
-        print  ('ProblemList')
+        if len(ProblemList)==0:
+                print('divです')
+                ProblemList = ProblemProcess(mondai_json, "div")
+                if len(ProblemList)==0:
+                        print('もうこれ以上は無理です') 
         if len(ProblemList)>2:
                 ProblemList = random.sample(ProblemList, 2)
         random.shuffle(ProblemList)
@@ -102,7 +108,7 @@ def AnaumeSet(Text, Answer):
         return Text
 
 
-def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey):
+def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey, d_type):
 
         '''id_title = id_sub[0]
         id_URL = id_sub[1]
@@ -120,10 +126,10 @@ def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey):
                                 sen_part = PreviousSen
 
                         else:
-                                sen_part = ProblemGenerating.SentenceMake(id_sub[1][j])
+                                sen_part = ProblemGenerating.SentenceMake(d_type,id_sub[1][j])
 
                 else:
-                        sen_part = ProblemGenerating.SentenceMake(id_sub[1][j])
+                        sen_part = ProblemGenerating.SentenceMake(d_type,id_sub[1][j])
 
                 #同じURLだった場合に用いるテキストデータをPreviousSenにキャッシュ
                 PreviousSen = sen_part
@@ -133,7 +139,7 @@ def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey):
 
                 #包含関係に関与していない場合
                 if (nan_none == 'nan') or (nan_none == 'None'):
-                        problem_list = ProblemGenerating.AnaumeMake(sen_part, id_sub[0][j])
+                        problem_list = ProblemGenerating.AnaumeMake(sen_part, id_sub[0][j], id_sub[1][j])
 
                         if problem_list != 'NoneProblem':
                                 ProblemList = ProblemResult(all_title, problem_list, id_sub[0][j], df_parentKey, ProblemList)
@@ -147,7 +153,7 @@ def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey):
                                 if id_sub[2][j] == id_Qkey[0][KeyID]:
                                         InKey_list.append(id_Qkey[1][KeyID])
 
-                        problem_list = ProblemGenerating.AnaumeMake(sen_part, id_sub[0][j])
+                        problem_list = ProblemGenerating.AnaumeMake(sen_part, id_sub[0][j], id_sub[1][j])
                         
 
                         #包含関係のあるキーワードが含まれる問題を判別

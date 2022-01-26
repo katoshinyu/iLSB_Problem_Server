@@ -1,84 +1,79 @@
 [
 	{
 		"QuestionID": 9999,
-		"QuestionKeywordID": 0,
-		"KeywordID": null,
-		"title": "地球温暖化",
-		"parent": null,
-		"QKeyType": "現象",
-		"nodeX": 441,
-		"nodeY": 105,
+		"QuestionKeywordID": 11,
+		"KeywordID": 43,
+		"title": "基本的人権",
+		"parent": 8,
+		"QKeyType": "社会活動",
+		"nodeX": 1171,
+		"nodeY": 386,
 		"nodeWidth": 150,
 		"nodeHeight": 50
 	},
 	[
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 0,
-			"KeywordID": 0,
-			"title": "温室効果ガス",
+			"QuestionKeywordID": 11,
+			"KeywordID": 63,
+			"title": "自由主義",
 			"parent": null,
-			"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
+			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 0,
-			"KeywordID": 1,
-			"title": "気候変動",
+			"QuestionKeywordID": 11,
+			"KeywordID": 64,
+			"title": "社会権",
 			"parent": null,
-			"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
+			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 0,
-			"KeywordID": 2,
-			"title": "地球表面温度",
+			"QuestionKeywordID": 11,
+			"KeywordID": 65,
+			"title": "自由権",
 			"parent": null,
-			"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
+			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 0,
-			"KeywordID": 7,
-			"title": "海面上昇",
-			"parent": 1,
-			"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-		},
-		{
-			"QuestionID": 9999,
-			"QuestionKeywordID": 0,
-			"KeywordID": 8,
-			"title": "異常気象",
-			"parent": 1,
-			"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-		},
-		{
-			"QuestionID": 9999,
-			"QuestionKeywordID": 0,
-			"KeywordID": 9,
-			"title": "砂漠化",
-			"parent": 1,
-			"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-		},
-		{
-			"QuestionID": 9999,
-			"QuestionKeywordID": 0,
-			"KeywordID": 10,
-			"title": "京都議定書",
+			"QuestionKeywordID": 11,
+			"KeywordID": 66,
+			"title": "参政権",
 			"parent": null,
-			"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
+			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 11,
+			"KeywordID": 67,
+			"title": "公共の福祉",
+			"parent": null,
+			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
 		}
 	],
 	[
-		"地球温暖化",
-		"温室効果ガス",
-		"化石燃料",
-		"京都議定書",
-		"気候変動",
-		"海面上昇",
-		"産業革命",
-		"再生可能エネルギー",
-		"京都メカニズム"
+		"三権分立",
+		"国会",
+		"内閣",
+		"裁判所",
+		"参議院",
+		"衆議院",
+		"政策",
+		"三審制度",
+		"日本国憲法",
+		"天皇",
+		"年金",
+		"基本的人権",
+		"選挙",
+		"自由権"
 	],
-	[]
+	[
+		"基本的人権",
+		"公共の福祉",
+		"最高法規",
+		"戦争放棄",
+		"国民主権"
+	]
 ]
