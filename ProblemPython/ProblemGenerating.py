@@ -2,6 +2,7 @@ import re
 import urllib.request as req
 from bs4 import BeautifulSoup
 import ProblemRemove
+import ProblemRevenge
 import json
 import csv
 
@@ -11,7 +12,7 @@ import csv
 answer_list = list()
 
 
-def SentenceMake(URL):
+def SentenceMake(type,URL):
     # urlopen()でデータを取得
     res = req.urlopen(URL)
 
@@ -20,7 +21,7 @@ def SentenceMake(URL):
     soup = BeautifulSoup(res, 'html.parser')
 
     # pでくくられているところを抽出し、一塊ごと、配列に格納していく
-    p_list = soup.find_all("p")
+    p_list = soup.find_all(type)
 
     p_join = ''
 
@@ -35,7 +36,7 @@ def SentenceMake(URL):
 
 
     #実際にキーワードを穴埋めにする処理
-def AnaumeMake(sen_list, AnaumeWord):
+def AnaumeMake(sen_list, AnaumeWord, URL):
     #問題のリスト初期値
     problem_list = list()
 
@@ -59,12 +60,13 @@ def AnaumeMake(sen_list, AnaumeWord):
 
 
     if(problem_list == []):
-        problem_list = NonProblemProcess()
+        problem_list = NonProblemProcess("div", URL)
 
     return problem_list
 
 #pタグで問題が生成, 出来なかった場合の処理
-def NonProblemProcess():
+def NonProblemProcess(type, URL):
+    
     return 'NoneProblem'
 
 
