@@ -1,56 +1,56 @@
 [
 	{
 		"QuestionID": 9999,
-		"QuestionKeywordID": 11,
-		"KeywordID": 43,
-		"title": "基本的人権",
-		"parent": 8,
-		"QKeyType": "社会活動",
-		"nodeX": 1171,
-		"nodeY": 386,
+		"QuestionKeywordID": 16,
+		"KeywordID": 19,
+		"title": "最高裁判所",
+		"parent": 3,
+		"QKeyType": "組織",
+		"nodeX": 1134,
+		"nodeY": 431,
 		"nodeWidth": 150,
 		"nodeHeight": 50
 	},
 	[
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 11,
-			"KeywordID": 63,
-			"title": "自由主義",
+			"QuestionKeywordID": 16,
+			"KeywordID": 41,
+			"title": "裁判部門",
 			"parent": null,
-			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
+			"URL": "https://www.courts.go.jp/saikosai/about/sosiki/index.html"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 11,
-			"KeywordID": 64,
-			"title": "社会権",
+			"QuestionKeywordID": 16,
+			"KeywordID": 42,
+			"title": "司法行政部門",
 			"parent": null,
-			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
+			"URL": "https://www.courts.go.jp/saikosai/about/sosiki/index.html"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 11,
-			"KeywordID": 65,
-			"title": "自由権",
+			"QuestionKeywordID": 16,
+			"KeywordID": 43,
+			"title": "上告事件",
 			"parent": null,
-			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
+			"URL": "https://www.courts.go.jp/saikosai/about/sosiki/index.html"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 11,
-			"KeywordID": 66,
-			"title": "参政権",
+			"QuestionKeywordID": 16,
+			"KeywordID": 44,
+			"title": "大法廷",
 			"parent": null,
-			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
+			"URL": "https://www.courts.go.jp/saikosai/about/sosiki/index.html"
 		},
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 11,
-			"KeywordID": 67,
-			"title": "公共の福祉",
+			"QuestionKeywordID": 16,
+			"KeywordID": 45,
+			"title": "小法廷",
 			"parent": null,
-			"URL": "https://kotobank.jp/word/%E5%9F%BA%E6%9C%AC%E7%9A%84%E4%BA%BA%E6%A8%A9-51583"
+			"URL": "https://www.courts.go.jp/saikosai/about/sosiki/index.html"
 		}
 	],
 	[
@@ -58,22 +58,41 @@
 		"国会",
 		"内閣",
 		"裁判所",
-		"参議院",
+		"自由",
+		"権利",
+		"議員",
+		"立法機関",
+		"二院制",
+		"国政調査",
+		"法律",
+		"内閣総理大臣",
+		"国務大臣",
+		"合議制",
+		"国務",
+		"予算案",
+		"最高裁判所",
+		"下級裁判所",
+		"国際司法裁判所",
+		"調停",
+		"民事事件",
+		"刑事事件",
+		"家事事件",
+		"少年事件",
+		"国会議員",
+		"地方議会議員",
+		"最高議決機関",
 		"衆議院",
-		"政策",
-		"三審制度",
-		"日本国憲法",
-		"天皇",
-		"年金",
-		"基本的人権",
-		"選挙",
-		"自由権"
+		"参議院",
+		"司法行政部門",
+		"裁判部門"
 	],
 	[
-		"基本的人権",
-		"公共の福祉",
-		"最高法規",
-		"戦争放棄",
-		"国民主権"
+		"下級裁判所",
+		"調停",
+		"国際司法裁判所",
+		"民事事件",
+		"刑事事件",
+		"家事事件",
+		"少年事件"
 	]
 ]

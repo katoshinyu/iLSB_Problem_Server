@@ -3,7 +3,12 @@ import ProblemGenerating
 import random
 
 GlobalURL = ''
+count = 0
 
+URLremoeList = ["https://www3.nhk.or.jp/news/html/20220124/k10013446431000.html",
+                "https://www2.nhk.or.jp/school/movie/clip.cgi?das_id=D0005311251_00000"]
+
+reURL = list()
 
 
 def ProblemProcess(mondai_json, d_type):
@@ -34,6 +39,11 @@ def ProblemProcess(mondai_json, d_type):
                 if df_sub['title'][i] in df_Qkey:
                         id_Qkey_KeyID.append(df_sub['KeywordID'][i])
                         id_Qkey_title.append(df_sub['title'][i])
+                        continue
+
+                if df_sub['URL'][i] in URLremoeList:
+                        continue
+                if df_sub['URL'][i] in reURL:
                         continue
 
                 id_URL.append(df_sub['URL'][i])
@@ -81,11 +91,15 @@ def ProblemProcess(mondai_json, d_type):
                 ProblemInf = {"Problem":ProblemBrackets, "Answer":AskAnswer[FiNum],"Anaume":ProblemAnaume}
                 ProblemList.append(ProblemInf)
         #最終的な値を返す
+        
         if len(ProblemList)==0:
                 print('divです')
-                ProblemList = ProblemProcess(mondai_json, "div")
-                if len(ProblemList)==0:
-                        print('もうこれ以上は無理です') 
+                if d_type == "div":
+                        ProblemList = {"Problem":'None', "Answer":'None',"Anaume":'None'}
+                        return [ProblemList]
+                else:
+                        d_type = "div"
+                        ProblemList = ProblemProcess(mondai_json, d_type)
         if len(ProblemList)>2:
                 ProblemList = random.sample(ProblemList, 2)
         random.shuffle(ProblemList)
@@ -127,12 +141,20 @@ def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey, d_type):
 
                         else:
                                 sen_part = ProblemGenerating.SentenceMake(d_type,id_sub[1][j])
+                                #例外処理が出てきてしまった場合の対処
+                                if sen_part == id_sub[1][j]:
+                                        if not sen_part in reURL:
+                                                reURL.append(sen_part)
 
                 else:
                         sen_part = ProblemGenerating.SentenceMake(d_type,id_sub[1][j])
+                        if sen_part == id_sub[1][j]:
+                                if not sen_part in reURL:
+                                        reURL.append(sen_part)
 
                 #同じURLだった場合に用いるテキストデータをPreviousSenにキャッシュ
                 PreviousSen = sen_part
+
 
                 #nanのtypeが'numpy.float64', Noneのtypeが'NoneType'なため無理やり文字列にし判別
                 nan_none = str(id_sub[2][j])
