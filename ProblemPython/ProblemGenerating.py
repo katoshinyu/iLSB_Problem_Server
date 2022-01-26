@@ -6,15 +6,28 @@ import ProblemRevenge
 import json
 import csv
 
+from urllib.error import HTTPError
+from urllib.error import URLError
+from http.client import RemoteDisconnected
+
 
 
 #答えのリスト初期設定
 answer_list = list()
 
-
 def SentenceMake(type,URL):
     # urlopen()でデータを取得
-    res = req.urlopen(URL)
+    try:
+        res = req.urlopen(URL)
+    except HTTPError as err:
+        print(err)
+        return URL
+    except URLError as err:
+        print(err)
+        return URL
+    except RemoteDisconnected:
+        print('error!')
+        return URL
 
     # BeautifulSoup()で解析
     # ここさえクリアすれば、後は時間はかからない

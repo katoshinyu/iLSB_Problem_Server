@@ -1,0 +1,83 @@
+[
+	{
+		"QuestionID": 9999,
+		"QuestionKeywordID": 1,
+		"KeywordID": 3,
+		"title": "温室効果ガス",
+		"parent": 0,
+		"QKeyType": "物質",
+		"nodeX": 472,
+		"nodeY": 273,
+		"nodeWidth": 150,
+		"nodeHeight": 50
+	},
+	[
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 1,
+			"KeywordID": 11,
+			"title": "二酸化炭素",
+			"parent": null,
+			"URL": "https://www.data.jma.go.jp/cpdinfo/chishiki_ondanka/p04.html"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 1,
+			"KeywordID": 12,
+			"title": "メタン",
+			"parent": null,
+			"URL": "https://www.data.jma.go.jp/cpdinfo/chishiki_ondanka/p04.html"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 1,
+			"KeywordID": 13,
+			"title": "一酸化二窒素",
+			"parent": null,
+			"URL": "https://www.data.jma.go.jp/cpdinfo/chishiki_ondanka/p04.html"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 1,
+			"KeywordID": 14,
+			"title": "フロンガス",
+			"parent": null,
+			"URL": "https://www.data.jma.go.jp/cpdinfo/chishiki_ondanka/p04.html"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 1,
+			"KeywordID": 18,
+			"title": "パリ協定",
+			"parent": null,
+			"URL": "https://www.orix.co.jp/grp/move_on/entry/2021/11/12/100000"
+		}
+	],
+	[
+		"地球温暖化",
+		"温室効果ガス",
+		"化石燃料",
+		"海面上昇",
+		"海洋酸性化",
+		"二酸化炭素",
+		"メタン",
+		"一酸化二窒素",
+		"フロンガス",
+		"石油",
+		"石炭",
+		"天然ガス",
+		"パリ協定",
+		"自然エネルギー"
+	],
+	[
+		"二酸化炭素",
+		"化石燃料",
+		"IPCC第5次評価報告書",
+		"水蒸気",
+		"メタン",
+		"フロン",
+		"IPCC第4次評価報告書",
+		"海面上昇",
+		"海洋酸性化"
+	]
+]
