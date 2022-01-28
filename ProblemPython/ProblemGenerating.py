@@ -44,7 +44,7 @@ def SentenceMake(type,URL):
         p_join += p.get_text()
 
     # 「。」で区切って、「。」を最後にくっつける
-    return (re.findall(r'[^.]+(?:[.]|$)', p_join))
+    return (re.findall(r'[^。]+(?:[。]|$)', p_join))
 
 
 
