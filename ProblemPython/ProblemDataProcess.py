@@ -21,7 +21,7 @@ def ProblemProcess(mondai_json, d_type):
         #初期課題以外の場合読み込む
         df_parentKey = mondai_json[3]
 
-        #QurrentQKeyを処理にいれるための準備
+        #QurrentQKeyを処理にいれるための準備　
         main_title = mondai_json[0]['title']
 
         id_URL = list()
@@ -91,7 +91,7 @@ def ProblemProcess(mondai_json, d_type):
                 ProblemInf = {"Problem":ProblemBrackets, "Answer":AskAnswer[FiNum],"Anaume":ProblemAnaume}
                 ProblemList.append(ProblemInf)
         #最終的な値を返す
-        
+
         if len(ProblemList)==0:
                 print('divです')
                 if d_type == "div":
@@ -100,8 +100,8 @@ def ProblemProcess(mondai_json, d_type):
                 else:
                         d_type = "div"
                         ProblemList = ProblemProcess(mondai_json, d_type)
-        if len(ProblemList)>2:
-                ProblemList = random.sample(ProblemList, 2)
+        if len(ProblemList)>5:
+                ProblemList = random.sample(ProblemList, 4)
         random.shuffle(ProblemList)
         return ProblemList
 
@@ -176,7 +176,7 @@ def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey, d_type):
                                         InKey_list.append(id_Qkey[1][KeyID])
 
                         problem_list = ProblemGenerating.AnaumeMake(sen_part, id_sub[0][j], id_sub[1][j])
-                        
+
 
                         #包含関係のあるキーワードが含まれる問題を判別
                         InKey_Problem = ProblemGenerating.PriorityProblem(InKey_list, problem_list)
@@ -186,15 +186,15 @@ def RelationJudge(all_title, id_sub, id_Qkey, df_parentKey, d_type):
                                 if len(InKey_Problem) == 1:
                                         ProblemInf = {"problem":InKey_Problem[0], "Answer":id_sub[0][j]}
                                         ProblemList.append(ProblemInf)
-                                else:   
+                                else:
                                         ProblemList = ProblemResult(all_title, InKey_Problem, id_sub[0][j],df_parentKey, ProblemList)
-                                        
+
                         else:
                                 if problem_list != 'NoneProblem':
                                         ProblemList = ProblemResult(all_title, problem_list, id_sub[0][j], df_parentKey, ProblemList)
 
         return ProblemList
-                                
+
 #問題作成の最終段階
 def ProblemResult(all_title, problem_list, Answer, df_parentKey, ProblemList):
         Rekey_list = ProblemGenerating.PriorityProblem(all_title, problem_list)

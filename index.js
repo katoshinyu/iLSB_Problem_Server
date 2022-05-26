@@ -1,7 +1,6 @@
 var express = require('express');
 var ejs = require("ejs");
-var bodyParser = require('body-parser');
-const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+//const bodyParser = require('body-parser');
 var fs = require("fs");
 
 const Pypath = "ProblemPython/ProblemMain.py"
@@ -14,16 +13,15 @@ var app = express();
 app.engine('ejs', ejs.renderFile);
 app.use(express.static('public'));
 
-//app.use(bodyParser.urlencoded({extended: false}));
+//app.use(bodyParser.urlencoded({extended: true}));
 
 
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 
-//CSVファイルに関して
-/*const csvWriter = createCsvWriter({
-    path: 'ProblemResource/problem.csv',       // 保存する先のパス(すでにファイルがある場合は上書き保存)
-    header: ['PROBLEM', 'ANSWER']  // 出力する項目(ここにない項目はスキップされる)
-});*/
+app.use(express.json());
+app.use(express.urlencoded({
+    estended:true
+}));
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -41,7 +39,16 @@ app.get('/', (req, res)=>{
     });
 });
 
-app.post('/', function(req, res){
+app.post('/log', function(req, res){
+
+    res.setHeader('Content-Type', 'text/plain');
+    console.log(req.body);
+    
+    
+   res.json([{"kato":"shinyu"}]); 
+});
+
+app.post('/problemGeneration', function(req, res){
 
     res.setHeader('Content-Type', 'text/plain');
     console.log(req.body);
@@ -74,16 +81,17 @@ app.post('/', function(req, res){
             if (fs.existsSync('ProblemResource/mondai_data.json')) fs.unlinkSync('ProblemResource/mondai_data.json') 
             fs.writeFileSync('ProblemResource/mondai_data.json', Problem_txt);
 
-            console.log(masterData)
-            console.log(JSON.parse(ProblemData))
+            //console.log(masterData)
+            //console.log(JSON.parse(ProblemData))
 
             res.json(JSON.parse(ProblemData))
 
         });
 });
-app.post('/save', function(req, res){
-    
-});
+
+//////////////////////////////////////////////////////////////////////////
+
+
 
 
 app.listen(3000, () => {

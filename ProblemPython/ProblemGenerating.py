@@ -79,7 +79,7 @@ def AnaumeMake(sen_list, AnaumeWord, URL):
 
 #pタグで問題が生成, 出来なかった場合の処理
 def NonProblemProcess(type, URL):
-    
+
     return 'NoneProblem'
 
 

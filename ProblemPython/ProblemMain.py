@@ -5,7 +5,8 @@ import json
 
 def main():
         #iLSBからの問題生成に必要な内容が記述されたjsonファイル
-        jf = "ProblemResource/mondai_resource.json"
+        #jf = "ProblemResource/mondai_resource.json"
+        jf = "/Users/katoushinyu/Desktop/iLSB_Problem_Server/ProblemResource/mondai_resource.json"
         d_type = "p"
         #JSONデータを辞書型として扱えるように
         with open(jf,"r",encoding="utf-8") as mondai_txt:
@@ -20,7 +21,8 @@ def main():
 
 #ここでの関数の処理の結果がサーバー側に渡される
 def ProblemOutPut(ProblemData):
-        problem_path = "ProblemResource/ProblemInformation.json"
+        #problem_path = "ProblemResource/ProblemInformation.json"
+        problem_path = "/Users/katoushinyu/Desktop/iLSB_Problem_Server/ProblemResource/ProblemInformation.json"
 
         #答えが格納された配列をJSONデータにし、更に見やすいようにインデントを設ける
         Problem_json = json.dumps(ProblemData, ensure_ascii = False)

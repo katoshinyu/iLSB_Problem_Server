@@ -1,0 +1,60 @@
+[
+	{
+		"QuestionID": 9999,
+		"QuestionKeywordID": 8,
+		"KeywordID": 23,
+		"title": "京都メカニズム",
+		"parent": 3,
+		"QKeyType": "制度",
+		"nodeX": 1201,
+		"nodeY": 473,
+		"nodeWidth": 150,
+		"nodeHeight": 50
+	},
+	[
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 8,
+			"KeywordID": 30,
+			"title": "共同実施",
+			"parent": null,
+			"URL": "https://www.jccca.org/cop/cop07/cop07_15"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 8,
+			"KeywordID": 31,
+			"title": "クリーン開発メカニズム",
+			"parent": null,
+			"URL": "https://www.jccca.org/cop/cop07/cop07_15"
+		},
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 8,
+			"KeywordID": 32,
+			"title": "排出量取引",
+			"parent": null,
+			"URL": "https://www.jccca.org/cop/cop07/cop07_15"
+		}
+	],
+	[
+		"地球温暖化",
+		"温室効果ガス",
+		"化石燃料",
+		"京都議定書",
+		"気候変動",
+		"海面上昇",
+		"産業革命",
+		"再生可能エネルギー",
+		"京都メカニズム"
+	],
+	[
+		"国際条約",
+		"吸収源",
+		"WWF",
+		"COP6",
+		"COP15",
+		"パリ協定",
+		"排出削減"
+	]
+]
