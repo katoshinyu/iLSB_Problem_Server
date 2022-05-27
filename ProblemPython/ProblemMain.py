@@ -13,10 +13,15 @@ def main():
                 mondai_txt = mondai_txt.read()
                 mondai_json = json.loads(mondai_txt)
 
+        ProblemArray = []
+
         #辞書型データををデータ処理の関数に渡す
-        ProblemInformation = ProblemDataProcess.ProblemProcess(mondai_json, d_type)
-        print(ProblemInformation)
-        ProblemOutPut(ProblemInformation)
+        for proInf in mondai_json:
+                ProblemInformation = ProblemDataProcess.ProblemProcess(proInf, d_type)
+                ProblemInformation.insert(0, proInf[0]["title"])
+                ProblemArray.append(ProblemInformation)
+        #print(ProblemArray[0][0])
+        ProblemOutPut(ProblemArray)
 
 
 #ここでの関数の処理の結果がサーバー側に渡される

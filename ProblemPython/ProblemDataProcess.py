@@ -100,9 +100,12 @@ def ProblemProcess(mondai_json, d_type):
                 else:
                         d_type = "div"
                         ProblemList = ProblemProcess(mondai_json, d_type)
+
+        #実験で問題制限かけるときにここの閾値をいじる
         if len(ProblemList)>5:
                 ProblemList = random.sample(ProblemList, 4)
         random.shuffle(ProblemList)
+
         return ProblemList
 
 def BlacketsSet(Text, Answer):

@@ -43,15 +43,14 @@ app.post('/log', function(req, res){
 
     res.setHeader('Content-Type', 'text/plain');
     console.log(req.body);
-    
-    
-   res.json([{"kato":"shinyu"}]); 
+    res.json([{"kato":"shinyu"}]);
 });
 
-app.post('/problemGeneration', function(req, res){
+app.post('/', function(req, res){
 
     res.setHeader('Content-Type', 'text/plain');
-    console.log(req.body);
+    let proResource = req.body;
+    console.log(proResource[0]);
     //var text1 = JSON.parse(req.body, null, '\t');
 
     //Pythonで使用するjsonファイルを作成するための準備
@@ -78,7 +77,7 @@ app.post('/problemGeneration', function(req, res){
             let ProblemData = JSON.stringify(ProblemJsonData);
             let Problem_txt = JSON.stringify(ProblemData, null, '\t')
 
-            if (fs.existsSync('ProblemResource/mondai_data.json')) fs.unlinkSync('ProblemResource/mondai_data.json') 
+            if (fs.existsSync('ProblemResource/mondai_data.json')) fs.unlinkSync('ProblemResource/mondai_data.json')
             fs.writeFileSync('ProblemResource/mondai_data.json', Problem_txt);
 
             //console.log(masterData)
