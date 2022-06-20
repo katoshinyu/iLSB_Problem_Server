@@ -103,8 +103,8 @@ def ProblemProcess(mondai_json, d_type):
                         ProblemList = ProblemProcess(mondai_json, d_type)
 
         #実験で問題制限かけるときにここの閾値をいじる
-        if len(ProblemList)>5:
-                ProblemList = random.sample(ProblemList, 4)
+        if len(ProblemList)>1:
+                ProblemList = random.sample(ProblemList, 1)
         random.shuffle(ProblemList)
 
         return ProblemList

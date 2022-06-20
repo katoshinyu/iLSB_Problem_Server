@@ -436,64 +436,64 @@
 	[
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 2,
-			"KeywordID": 10,
-			"title": "間接税",
+			"QuestionKeywordID": 3,
+			"KeywordID": 16,
+			"title": "直接税",
 			"parent": 1,
 			"QKeyType": "制度",
-			"nodeX": 122,
-			"nodeY": 357,
+			"nodeX": 339,
+			"nodeY": 352,
 			"nodeWidth": 150,
 			"nodeHeight": 50
 		},
 		[
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 2,
-				"KeywordID": 55,
-				"title": "納税義務者を通じて納める租税",
+				"QuestionKeywordID": 3,
+				"KeywordID": 58,
+				"title": "担税者",
 				"parent": null,
 				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 2,
-				"KeywordID": 56,
-				"title": "消費税",
+				"QuestionKeywordID": 3,
+				"KeywordID": 59,
+				"title": "納税義務者",
 				"parent": null,
 				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 2,
-				"KeywordID": 57,
-				"title": "酒税",
+				"QuestionKeywordID": 3,
+				"KeywordID": 60,
+				"title": "所得税",
 				"parent": null,
 				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 2,
-				"KeywordID": 64,
-				"title": "たばこ税",
+				"QuestionKeywordID": 3,
+				"KeywordID": 61,
+				"title": "法人税",
 				"parent": null,
-				"URL": "https://biz.moneyforward.com/accounting/basic/18200/"
+				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 2,
-				"KeywordID": 65,
-				"title": "関税",
+				"QuestionKeywordID": 3,
+				"KeywordID": 62,
+				"title": "相続税",
 				"parent": null,
-				"URL": "https://biz.moneyforward.com/accounting/basic/18200/"
+				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 2,
-				"KeywordID": 66,
-				"title": "租税の転嫁",
+				"QuestionKeywordID": 3,
+				"KeywordID": 63,
+				"title": "住民税",
 				"parent": null,
-				"URL": "https://biz.moneyforward.com/accounting/basic/18200/"
+				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
 			}
 		],
 		[
@@ -517,12 +517,12 @@
 		[
 			"消費税",
 			"所得税",
+			"間接税",
 			"住民税",
 			"法人税",
 			"酒税",
 			"たばこ税",
 			"関税",
-			"直接税",
 			"相続税",
 			"国税",
 			"地方税",
