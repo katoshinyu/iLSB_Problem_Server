@@ -1,0 +1,220 @@
+[
+	{
+		"title": "財政",
+		"name": "sasaki",
+		"situation": "before"
+	},
+	{
+		"type": "Problem",
+		"action": "GenerationButtonClick",
+		"title": "ProblemGeneration",
+		"time": "16:18:0"
+	},
+	{
+		"type": "Problem",
+		"action": "GenerationButtonClick",
+		"title": "ProblemGeneration",
+		"time": "16:18:45"
+	},
+	{
+		"type": "Problem",
+		"action": "SendToServer",
+		"title": "GenerationSuccess",
+		"time": "16:18:49"
+	},
+	{
+		"type": "QTree",
+		"action": "drop",
+		"title": "ドロップ",
+		"time": "16:20:33"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "node.js res - Google 検索",
+		"contents_1": "https://www.google.com/search?client=firefox-b-d&q=node.js+res",
+		"time": "17:24:15"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Node.js Express  で出てくる req, res, next - Qiita",
+		"contents_1": "https://qiita.com/syumiwohossu/items/f9ee317f31adc3ad387b",
+		"time": "17:24:18"
+	},
+	{
+		"type": "Keyrepo",
+		"action": "LearnStart",
+		"title": "財政",
+		"contents_1": "sasaki",
+		"time": "17:58:51"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "財政 - Google 検索",
+		"contents_1": "https://www.google.com/search?q=%E8%B2%A1%E6%94%BF",
+		"time": "17:58:52"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory - Google 検索",
+		"contents_1": "https://www.google.com/search?client=firefox-b-d&q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory",
+		"time": "18:8:53"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, read - Qiita",
+		"contents_1": "https://qiita.com/great084/items/83a68e38f9ccb29d1249",
+		"time": "18:8:56"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory - Google 検索",
+		"contents_1": "https://www.google.com/search?client=firefox-b-d&q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory",
+		"time": "18:9:39"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, opeb - Google 検索",
+		"contents_1": "https://www.google.com/search?q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+opeb&client=firefox-b-d&ei=JDmwYsnVM8rU2roP5Zys8Aw&ved=0ahUKEwjJ98mf17v4AhVKqlYBHWUOC84Q4dUDCA0&uact=5&oq=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+opeb&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEKIEMgUIABCiBDIFCAAQogQ6BwgAEEcQsAM6BQgAEIAEOgQIABAeOgQIABATOgYIABAeEBM6CAgAEB4QBRATSgQIQRgASgQIRhgAUNIGWNYZYM8baAFwAXgAgAGCAYgB-gWSAQM0LjSYAQCgAQHIAQrAAQE&sclient=gws-wiz",
+		"time": "18:9:45"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, open - Google 検索",
+		"contents_1": "https://www.google.com/search?q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&client=firefox-b-d&ei=WDmwYsiXK9q22roPnvO78Aw&ved=0ahUKEwjIo6e417v4AhVam1YBHZ75Ds4Q4dUDCA0&uact=5&oq=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEBMyBAgAEBMyBAgAEBMyBAgAEBMyBggAEB4QEzIGCAAQHhATMggIABAeEAUQEzIICAAQHhAFEBMyCAgAEB4QBRATMggIABAeEAUQEzoHCAAQRxCwA0oECEEYAEoECEYYAFDOAljWBWDJDGgBcAF4AIABX4gBtAGSAQEymAEAoAEByAEKwAEB&sclient=gws-wiz",
+		"time": "18:9:48"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Unhandled rejection Error: EISDIR: illegal operation on a directoryが出たときにやったこと - Qiita",
+		"contents_1": "https://qiita.com/se_fy/items/fed3856e2a277237d34f",
+		"time": "18:9:51"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, open - Google 検索",
+		"contents_1": "https://www.google.com/search?q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&client=firefox-b-d&ei=WDmwYsiXK9q22roPnvO78Aw&ved=0ahUKEwjIo6e417v4AhVam1YBHZ75Ds4Q4dUDCA0&uact=5&oq=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEBMyBAgAEBMyBAgAEBMyBAgAEBMyBggAEB4QEzIGCAAQHhATMggIABAeEAUQEzIICAAQHhAFEBMyCAgAEB4QBRATMggIABAeEAUQEzoHCAAQRxCwA0oECEEYAEoECEYYAFDOAljWBWDJDGgBcAF4AIABX4gBtAGSAQEymAEAoAEByAEKwAEB&sclient=gws-wiz",
+		"time": "18:10:7"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "NPM stuck giving the same error EISDIR: Illegal operation on a directory, read at error (native)",
+		"contents_1": "https://getridbug.com/node-js/npm-stuck-giving-the-same-error-eisdir-illegal-operation-on-a-directory-read-at-error-native/",
+		"time": "18:10:17"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, open - Google 検索",
+		"contents_1": "https://www.google.com/search?q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&client=firefox-b-d&ei=WDmwYsiXK9q22roPnvO78Aw&ved=0ahUKEwjIo6e417v4AhVam1YBHZ75Ds4Q4dUDCA0&uact=5&oq=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEBMyBAgAEBMyBAgAEBMyBAgAEBMyBggAEB4QEzIGCAAQHhATMggIABAeEAUQEzIICAAQHhAFEBMyCAgAEB4QBRATMggIABAeEAUQEzoHCAAQRxCwA0oECEEYAEoECEYYAFDOAljWBWDJDGgBcAF4AIABX4gBtAGSAQEymAEAoAEByAEKwAEB&sclient=gws-wiz",
+		"time": "18:10:57"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "node.js — NPMが同じエラーを出したままEISDIR：ディレクトリーに対する不正な操作、エラー時の読み取り（ネイティブ）",
+		"contents_1": "https://www.web-dev-qa-db-ja.com/ja/node.js/npm%E3%81%8C%E5%90%8C%E3%81%98%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E5%87%BA%E3%81%97%E3%81%9F%E3%81%BE%E3%81%BEeisdir%EF%BC%9A%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%83%BC%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E4%B8%8D%E6%AD%A3%E3%81%AA%E6%93%8D%E4%BD%9C%E3%80%81%E3%82%A8%E3%83%A9%E3%83%BC%E6%99%82%E3%81%AE%E8%AA%AD%E3%81%BF%E5%8F%96%E3%82%8A%EF%BC%88%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%EF%BC%89/822746030/",
+		"time": "18:11:1"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, open - Google 検索",
+		"contents_1": "https://www.google.com/search?q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&client=firefox-b-d&ei=WDmwYsiXK9q22roPnvO78Aw&ved=0ahUKEwjIo6e417v4AhVam1YBHZ75Ds4Q4dUDCA0&uact=5&oq=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEBMyBAgAEBMyBAgAEBMyBAgAEBMyBggAEB4QEzIGCAAQHhATMggIABAeEAUQEzIICAAQHhAFEBMyCAgAEB4QBRATMggIABAeEAUQEzoHCAAQRxCwA0oECEEYAEoECEYYAFDOAljWBWDJDGgBcAF4AIABX4gBtAGSAQEymAEAoAEByAEKwAEB&sclient=gws-wiz",
+		"time": "18:11:36"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, read",
+		"contents_1": "https://groups.google.com/g/firebase-talk/c/S4flxK9-skI",
+		"time": "18:11:42"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, open - Google 検索",
+		"contents_1": "https://www.google.com/search?q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&client=firefox-b-d&ei=WDmwYsiXK9q22roPnvO78Aw&ved=0ahUKEwjIo6e417v4AhVam1YBHZ75Ds4Q4dUDCA0&uact=5&oq=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEBMyBAgAEBMyBAgAEBMyBAgAEBMyBggAEB4QEzIGCAAQHhATMggIABAeEAUQEzIICAAQHhAFEBMyCAgAEB4QBRATMggIABAeEAUQEzoHCAAQRxCwA0oECEEYAEoECEYYAFDOAljWBWDJDGgBcAF4AIABX4gBtAGSAQEymAEAoAEByAEKwAEB&sclient=gws-wiz",
+		"time": "18:11:46"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, read - Qiita",
+		"contents_1": "https://qiita.com/great084/items/83a68e38f9ccb29d1249",
+		"time": "18:11:53"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Error: EISDIR: illegal operation on a directory, open - Google 検索",
+		"contents_1": "https://www.google.com/search?q=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&client=firefox-b-d&ei=WDmwYsiXK9q22roPnvO78Aw&ved=0ahUKEwjIo6e417v4AhVam1YBHZ75Ds4Q4dUDCA0&uact=5&oq=Error%3A+EISDIR%3A+illegal+operation+on+a+directory%2C+open&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEBMyBAgAEBMyBAgAEBMyBAgAEBMyBggAEB4QEzIGCAAQHhATMggIABAeEAUQEzIICAAQHhAFEBMyCAgAEB4QBRATMggIABAeEAUQEzoHCAAQRxCwA0oECEEYAEoECEYYAFDOAljWBWDJDGgBcAF4AIABX4gBtAGSAQEymAEAoAEByAEKwAEB&sclient=gws-wiz",
+		"time": "18:12:8"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "配列の最初に要素を追加する js - Google 検索",
+		"contents_1": "https://www.google.com/search?client=firefox-b-d&q=%E9%85%8D%E5%88%97%E3%81%AE%E6%9C%80%E5%88%9D%E3%81%AB%E8%A6%81%E7%B4%A0%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B+js",
+		"time": "18:23:55"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "JavaScriptで配列に要素を追加する方法",
+		"contents_1": "https://lab.syncer.jp/Web/JavaScript/Snippet/8/",
+		"time": "18:23:56"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "配列の最初に要素を追加する js - Google 検索",
+		"contents_1": "https://www.google.com/search?client=firefox-b-d&q=%E9%85%8D%E5%88%97%E3%81%AE%E6%9C%80%E5%88%9D%E3%81%AB%E8%A6%81%E7%B4%A0%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B+js",
+		"time": "18:24:2"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "JavaScript | 配列へ要素を追加する(push, unshift)",
+		"contents_1": "https://www.javadrive.jp/javascript/array/index4.html",
+		"time": "18:24:5"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Unexpected token 2 in JSON at position 0 - Google 検索",
+		"contents_1": "https://www.google.com/search?client=firefox-b-d&q=Unexpected+token+2+in+JSON+at+position+0",
+		"time": "18:53:49"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Fix - Unexpected token u in JSON at position 0 Error in JS | bobbyhadz",
+		"contents_1": "https://bobbyhadz.com/blog/javascript-unexpected-token-u-in-json-at-position-0",
+		"time": "18:53:52"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Unexpected token 2 in JSON at position 0 - Google 検索",
+		"contents_1": "https://www.google.com/search?client=firefox-b-d&q=Unexpected+token+2+in+JSON+at+position+0",
+		"time": "18:53:54"
+	},
+	{
+		"type": "WebPage",
+		"action": "load",
+		"title": "Uncaught SyntaxError: Unexpected token < in JSON at position 0　の解決方法が分からず困っています。",
+		"contents_1": "https://teratail.com/questions/287862",
+		"time": "18:53:59"
+	}
+]

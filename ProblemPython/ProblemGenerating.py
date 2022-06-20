@@ -44,7 +44,10 @@ def SentenceMake(type,URL):
         p_join += p.get_text()
 
     # 「。」で区切って、「。」を最後にくっつける
-    return (re.findall(r'[^。]+(?:[。]|$)', p_join))
+    if type == "p":
+        return (re.findall(r'[^。]+(?:[。]|$)', p_join))
+    elif type == "type":
+        return (re.findall(r'[^"\n"]+(?:[。]|$)'), p_join)
 
 
 
@@ -73,7 +76,7 @@ def AnaumeMake(sen_list, AnaumeWord, URL):
 
 
     if(problem_list == []):
-        problem_list = NonProblemProcess("div", URL)
+        problem_list = NonProblemProcess("span", URL)
 
     return problem_list
 

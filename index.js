@@ -40,10 +40,18 @@ app.get('/', (req, res)=>{
 });
 
 app.post('/log', function(req, res){
-
     res.setHeader('Content-Type', 'text/plain');
-    console.log(req.body);
-    res.json([{"kato":"shinyu"}]);
+
+    var log_json = JSON.stringify(req.body, null ,'\t');
+    var log_json_operate = JSON.parse(log_json)
+
+    var JSONNAME = "logdata" + "_" + log_json_operate[0].name + "_" + log_json_operate[0].title + "_" + log_json_operate[0].situation
+    var JSONPATH = "LogData/" + JSONNAME + ".json"
+    //var log_json_operate = JSON.parse(log_json)
+
+    fs.writeFileSync(JSONPATH, log_json)
+    //console.log(req.body);
+    res.json([{"json":"kato"}])
 });
 
 app.post('/', function(req, res){

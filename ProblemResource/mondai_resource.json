@@ -4,11 +4,11 @@
 			"QuestionID": 9999,
 			"QuestionKeywordID": 0,
 			"KeywordID": null,
-			"title": "地球温暖化",
+			"title": "財政",
 			"parent": null,
-			"QKeyType": "現象",
-			"nodeX": 659,
-			"nodeY": 124,
+			"QKeyType": "社会活動",
+			"nodeX": 248,
+			"nodeY": 20,
 			"nodeWidth": 150,
 			"nodeHeight": 50
 		},
@@ -17,319 +17,236 @@
 				"QuestionID": 9999,
 				"QuestionKeywordID": 0,
 				"KeywordID": 0,
-				"title": "温室効果ガス",
+				"title": "税金",
 				"parent": null,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page03.htm"
 			},
 			{
 				"QuestionID": 9999,
 				"QuestionKeywordID": 0,
 				"KeywordID": 1,
-				"title": "気候変動",
-				"parent": null,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
+				"title": "国債",
+				"parent": 7,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page03.htm"
 			},
 			{
 				"QuestionID": 9999,
 				"QuestionKeywordID": 0,
 				"KeywordID": 2,
-				"title": "地球表面温度",
+				"title": "歳出",
+				"parent": 6,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page03.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 3,
+				"title": "歳入",
+				"parent": 6,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page03.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 4,
+				"title": "租税・印紙収入",
 				"parent": null,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page03.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 5,
+				"title": "公債金",
+				"parent": 7,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page03.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 6,
+				"title": "一般会計",
+				"parent": null,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page03.htm"
 			},
 			{
 				"QuestionID": 9999,
 				"QuestionKeywordID": 0,
 				"KeywordID": 7,
-				"title": "海面上昇",
-				"parent": 1,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 0,
-				"KeywordID": 8,
-				"title": "異常気象",
-				"parent": 1,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 0,
-				"KeywordID": 9,
-				"title": "砂漠化",
-				"parent": 1,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 0,
-				"KeywordID": 10,
-				"title": "京都議定書",
+				"title": "借金",
 				"parent": null,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page03.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 101,
+				"title": "国",
+				"parent": null,
+				"URL": "https://www.nta.go.jp/taxes/kids/oyo/page11.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 102,
+				"title": "地方公共団体",
+				"parent": null,
+				"URL": "https://www.nta.go.jp/taxes/kids/oyo/page11.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 103,
+				"title": "公共サービス",
+				"parent": 104,
+				"URL": "https://www.nta.go.jp/taxes/kids/oyo/page16.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 104,
+				"title": "受益",
+				"parent": null,
+				"URL": "https://www.nta.go.jp/taxes/kids/oyo/page16.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 105,
+				"title": "納税者",
+				"parent": 0,
+				"URL": "https://www.nta.go.jp/taxes/kids/oyo/page16.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 0,
+				"KeywordID": 106,
+				"title": "税負担",
+				"parent": 0,
+				"URL": "https://www.nta.go.jp/taxes/kids/oyo/page16.htm"
 			}
 		],
 		[
-			"地球温暖化",
-			"温室効果ガス",
-			"化石燃料",
-			"京都議定書",
-			"海面上昇",
-			"産業革命",
-			"再生可能エネルギー",
-			"京都メカニズム"
+			"財政",
+			"税金",
+			"間接税",
+			"直接税",
+			"租税・印紙収入",
+			"一般会計",
+			"社会保障",
+			"国債費",
+			"地方交付税交付金",
+			"社会保険",
+			"社会福祉",
+			"公的扶助",
+			"保健医療・公衆衛生",
+			"基礎的財政収支",
+			"財政力を調整",
+			"所得税"
 		],
 		[]
 	],
 	[
 		{
 			"QuestionID": 9999,
-			"QuestionKeywordID": 1,
-			"KeywordID": 0,
-			"title": "温室効果ガス",
-			"parent": 0,
-			"QKeyType": "物質",
-			"nodeX": 209,
-			"nodeY": 285,
-			"nodeWidth": 150,
-			"nodeHeight": 50
-		},
-		[
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 1,
-				"KeywordID": 3,
-				"title": "二酸化炭素",
-				"parent": null,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 1,
-				"KeywordID": 4,
-				"title": "メタン",
-				"parent": null,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 1,
-				"KeywordID": 5,
-				"title": " 亜酸化窒素",
-				"parent": null,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 1,
-				"KeywordID": 6,
-				"title": "化石燃料",
-				"parent": null,
-				"URL": "https://ja.wikipedia.org/wiki/%E5%9C%B0%E7%90%83%E6%B8%A9%E6%9A%96%E5%8C%96"
-			}
-		],
-		[
-			"地球温暖化",
-			"温室効果ガス",
-			"化石燃料",
-			"京都議定書",
-			"海面上昇",
-			"産業革命",
-			"再生可能エネルギー",
-			"京都メカニズム"
-		],
-		[
-			"気候変動",
-			"地球表面温度",
-			"海面上昇",
-			"異常気象",
-			"砂漠化",
-			"京都議定書"
-		]
-	],
-	[
-		{
-			"QuestionID": 9999,
-			"QuestionKeywordID": 3,
-			"KeywordID": 10,
-			"title": "京都議定書",
-			"parent": 0,
+			"QuestionKeywordID": 7,
+			"KeywordID": 28,
+			"title": "国債費",
+			"parent": 5,
 			"QKeyType": "制度",
-			"nodeX": 1013,
-			"nodeY": 331,
+			"nodeX": 817,
+			"nodeY": 394,
 			"nodeWidth": 150,
 			"nodeHeight": 50
 		},
 		[
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 3,
-				"KeywordID": 22,
-				"title": "国際条約",
+				"QuestionKeywordID": 7,
+				"KeywordID": 37,
+				"title": "国際整理基金",
 				"parent": null,
-				"URL": "https://www.wwf.or.jp/activities/basicinfo/3536.html"
+				"URL": "https://www.tokaitokyo.co.jp/kantan/term/detail_0991.html"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 3,
-				"KeywordID": 23,
-				"title": "京都メカニズム",
+				"QuestionKeywordID": 7,
+				"KeywordID": 38,
+				"title": "償還",
 				"parent": null,
-				"URL": "https://www.wwf.or.jp/activities/basicinfo/3536.html"
+				"URL": "https://www.tokaitokyo.co.jp/kantan/term/detail_0991.html"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 3,
-				"KeywordID": 24,
-				"title": "吸収源",
+				"QuestionKeywordID": 7,
+				"KeywordID": 39,
+				"title": "利払い",
 				"parent": null,
-				"URL": "https://www.wwf.or.jp/activities/basicinfo/3536.html"
+				"URL": "https://www.smd-am.co.jp/glossary/YST3472/"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 3,
-				"KeywordID": 25,
-				"title": "WWF",
+				"QuestionKeywordID": 7,
+				"KeywordID": 40,
+				"title": "基礎的財政収支",
 				"parent": null,
-				"URL": "https://www.wwf.or.jp/activities/basicinfo/3536.html"
+				"URL": "https://www.nikkei.com/article/DGXZQOUA304VD0Q2A530C2000000/"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 3,
-				"KeywordID": 26,
-				"title": "COP6",
-				"parent": 22,
-				"URL": "https://www.wwf.or.jp/activities/basicinfo/3536.html"
+				"QuestionKeywordID": 7,
+				"KeywordID": 41,
+				"title": "税収",
+				"parent": 40,
+				"URL": "https://www.nikkei.com/article/DGXZQOUA304VD0Q2A530C2000000/"
 			},
 			{
 				"QuestionID": 9999,
-				"QuestionKeywordID": 3,
-				"KeywordID": 27,
-				"title": "COP15",
-				"parent": 22,
-				"URL": "https://www.wwf.or.jp/activities/basicinfo/3536.html"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 3,
-				"KeywordID": 28,
-				"title": "パリ協定",
-				"parent": 22,
-				"URL": "https://www.wwf.or.jp/activities/basicinfo/3536.html"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 3,
-				"KeywordID": 29,
-				"title": "排出削減",
-				"parent": null,
-				"URL": "https://www.wwf.or.jp/activities/basicinfo/3536.html"
+				"QuestionKeywordID": 7,
+				"KeywordID": 42,
+				"title": "税外収入",
+				"parent": 40,
+				"URL": "https://www.nikkei.com/article/DGXZQOUA304VD0Q2A530C2000000/"
 			}
 		],
 		[
-			"地球温暖化",
-			"温室効果ガス",
-			"化石燃料",
-			"京都議定書",
-			"海面上昇",
-			"産業革命",
-			"再生可能エネルギー",
-			"京都メカニズム"
+			"財政",
+			"税金",
+			"間接税",
+			"直接税",
+			"租税・印紙収入",
+			"一般会計",
+			"社会保障",
+			"国債費",
+			"地方交付税交付金",
+			"社会保険",
+			"社会福祉",
+			"公的扶助",
+			"保健医療・公衆衛生",
+			"基礎的財政収支",
+			"財政力を調整",
+			"所得税"
 		],
 		[
-			"温室効果ガス",
-			"気候変動",
-			"地球表面温度",
-			"海面上昇",
-			"異常気象",
-			"砂漠化"
-		]
-	],
-	[
-		{
-			"QuestionID": 9999,
-			"QuestionKeywordID": 5,
-			"KeywordID": 7,
-			"title": "海面上昇",
-			"parent": 0,
-			"QKeyType": "現象",
-			"nodeX": 580,
-			"nodeY": 448,
-			"nodeWidth": 150,
-			"nodeHeight": 50
-		},
-		[
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 5,
-				"KeywordID": 17,
-				"title": "台風",
-				"parent": 21,
-				"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 5,
-				"KeywordID": 18,
-				"title": "高潮",
-				"parent": 21,
-				"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 5,
-				"KeywordID": 19,
-				"title": "氷河",
-				"parent": null,
-				"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 5,
-				"KeywordID": 20,
-				"title": "氷床",
-				"parent": null,
-				"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
-			},
-			{
-				"QuestionID": 9999,
-				"QuestionKeywordID": 5,
-				"KeywordID": 21,
-				"title": "海水",
-				"parent": null,
-				"URL": "https://www.egmkt.co.jp/column/consumer/20210830_EG_158.html"
-			}
-		],
-		[
-			"地球温暖化",
-			"温室効果ガス",
-			"化石燃料",
-			"京都議定書",
-			"海面上昇",
-			"産業革命",
-			"再生可能エネルギー",
-			"京都メカニズム"
-		],
-		[
-			"温室効果ガス",
-			"気候変動",
-			"地球表面温度",
-			"異常気象",
-			"砂漠化",
-			"京都議定書"
+			"財政の健全性",
+			"予算単一の原則",
+			"特別会計",
+			"財政法",
+			"社会保障",
+			"地方交付税交付金",
+			"単一予算主義"
 		]
 	],
 	[
 		{
 			"QuestionID": 9999,
 			"QuestionKeywordID": 8,
-			"KeywordID": 23,
-			"title": "京都メカニズム",
-			"parent": 3,
+			"KeywordID": 29,
+			"title": "地方交付税交付金",
+			"parent": 5,
 			"QKeyType": "制度",
-			"nodeX": 1201,
-			"nodeY": 473,
+			"nodeX": 1006,
+			"nodeY": 396,
 			"nodeWidth": 150,
 			"nodeHeight": 50
 		},
@@ -337,46 +254,284 @@
 			{
 				"QuestionID": 9999,
 				"QuestionKeywordID": 8,
-				"KeywordID": 30,
-				"title": "共同実施",
-				"parent": null,
-				"URL": "https://www.jccca.org/cop/cop07/cop07_15"
+				"KeywordID": 43,
+				"title": "財政力を調整",
+				"parent": 45,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page07.htm"
 			},
 			{
 				"QuestionID": 9999,
 				"QuestionKeywordID": 8,
-				"KeywordID": 31,
-				"title": "クリーン開発メカニズム",
-				"parent": null,
-				"URL": "https://www.jccca.org/cop/cop07/cop07_15"
+				"KeywordID": 44,
+				"title": "公的サービス",
+				"parent": 45,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page07.htm"
 			},
 			{
 				"QuestionID": 9999,
 				"QuestionKeywordID": 8,
-				"KeywordID": 32,
-				"title": "排出量取引",
+				"KeywordID": 45,
+				"title": "格差",
 				"parent": null,
-				"URL": "https://www.jccca.org/cop/cop07/cop07_15"
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page07.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 8,
+				"KeywordID": 46,
+				"title": "教育",
+				"parent": 44,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page07.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 8,
+				"KeywordID": 47,
+				"title": "警察",
+				"parent": 44,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page07.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 8,
+				"KeywordID": 48,
+				"title": "消防",
+				"parent": 44,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page07.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 8,
+				"KeywordID": 49,
+				"title": "環境衛生",
+				"parent": 44,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page07.htm"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 8,
+				"KeywordID": 50,
+				"title": "生活保護",
+				"parent": 44,
+				"URL": "https://www.nta.go.jp/taxes/kids/hatten/page07.htm"
 			}
 		],
 		[
-			"地球温暖化",
-			"温室効果ガス",
-			"化石燃料",
-			"京都議定書",
-			"海面上昇",
-			"産業革命",
-			"再生可能エネルギー",
-			"京都メカニズム"
+			"財政",
+			"税金",
+			"間接税",
+			"直接税",
+			"租税・印紙収入",
+			"一般会計",
+			"社会保障",
+			"国債費",
+			"地方交付税交付金",
+			"社会保険",
+			"社会福祉",
+			"公的扶助",
+			"保健医療・公衆衛生",
+			"基礎的財政収支",
+			"財政力を調整",
+			"所得税"
 		],
 		[
-			"国際条約",
-			"吸収源",
-			"WWF",
-			"COP6",
-			"COP15",
-			"パリ協定",
-			"排出削減"
+			"財政の健全性",
+			"予算単一の原則",
+			"特別会計",
+			"財政法",
+			"社会保障",
+			"国債費",
+			"単一予算主義"
+		]
+	],
+	[
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 4,
+			"KeywordID": 4,
+			"title": "租税・印紙収入",
+			"parent": 0,
+			"QKeyType": "制度",
+			"nodeX": 429,
+			"nodeY": 222,
+			"nodeWidth": 150,
+			"nodeHeight": 50
+		},
+		[
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 4,
+				"KeywordID": 18,
+				"title": "一般会計歳入",
+				"parent": null,
+				"URL": "https://kotobank.jp/word/%E5%8D%B0%E7%B4%99%E5%8F%8E%E5%85%A5-32884"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 4,
+				"KeywordID": 19,
+				"title": "収入印紙",
+				"parent": null,
+				"URL": "https://kotobank.jp/word/%E5%8D%B0%E7%B4%99%E5%8F%8E%E5%85%A5-32884"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 4,
+				"KeywordID": 20,
+				"title": "収入金",
+				"parent": null,
+				"URL": "https://kotobank.jp/word/%E5%8D%B0%E7%B4%99%E5%8F%8E%E5%85%A5-32884"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 4,
+				"KeywordID": 21,
+				"title": "受験手数料",
+				"parent": null,
+				"URL": "https://kotobank.jp/word/%E5%8D%B0%E7%B4%99%E5%8F%8E%E5%85%A5-32884"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 4,
+				"KeywordID": 22,
+				"title": "登録免許税",
+				"parent": null,
+				"URL": "https://kotobank.jp/word/%E5%8D%B0%E7%B4%99%E5%8F%8E%E5%85%A5-32884"
+			}
+		],
+		[
+			"財政",
+			"税金",
+			"間接税",
+			"直接税",
+			"租税・印紙収入",
+			"一般会計",
+			"社会保障",
+			"国債費",
+			"地方交付税交付金",
+			"社会保険",
+			"社会福祉",
+			"公的扶助",
+			"保健医療・公衆衛生",
+			"基礎的財政収支",
+			"財政力を調整",
+			"所得税"
+		],
+		[
+			"税金",
+			"国債",
+			"歳出",
+			"歳入",
+			"公債金",
+			"一般会計",
+			"借金",
+			"国",
+			"地方公共団体",
+			"公共サービス",
+			"受益",
+			"納税者",
+			"税負担"
+		]
+	],
+	[
+		{
+			"QuestionID": 9999,
+			"QuestionKeywordID": 2,
+			"KeywordID": 10,
+			"title": "間接税",
+			"parent": 1,
+			"QKeyType": "制度",
+			"nodeX": 122,
+			"nodeY": 357,
+			"nodeWidth": 150,
+			"nodeHeight": 50
+		},
+		[
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 2,
+				"KeywordID": 55,
+				"title": "納税義務者を通じて納める租税",
+				"parent": null,
+				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 2,
+				"KeywordID": 56,
+				"title": "消費税",
+				"parent": null,
+				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 2,
+				"KeywordID": 57,
+				"title": "酒税",
+				"parent": null,
+				"URL": "https://www.kzei.or.jp/contents/startup/cat/2012/10/28-2343.html"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 2,
+				"KeywordID": 64,
+				"title": "たばこ税",
+				"parent": null,
+				"URL": "https://biz.moneyforward.com/accounting/basic/18200/"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 2,
+				"KeywordID": 65,
+				"title": "関税",
+				"parent": null,
+				"URL": "https://biz.moneyforward.com/accounting/basic/18200/"
+			},
+			{
+				"QuestionID": 9999,
+				"QuestionKeywordID": 2,
+				"KeywordID": 66,
+				"title": "租税の転嫁",
+				"parent": null,
+				"URL": "https://biz.moneyforward.com/accounting/basic/18200/"
+			}
+		],
+		[
+			"財政",
+			"税金",
+			"間接税",
+			"直接税",
+			"租税・印紙収入",
+			"一般会計",
+			"社会保障",
+			"国債費",
+			"地方交付税交付金",
+			"社会保険",
+			"社会福祉",
+			"公的扶助",
+			"保健医療・公衆衛生",
+			"基礎的財政収支",
+			"財政力を調整",
+			"所得税"
+		],
+		[
+			"消費税",
+			"所得税",
+			"住民税",
+			"法人税",
+			"酒税",
+			"たばこ税",
+			"関税",
+			"直接税",
+			"相続税",
+			"国税",
+			"地方税",
+			"所得課税",
+			"消費課税",
+			"資産課税",
+			"どこに納めるか",
+			"何に対して",
+			"納め方"
 		]
 	]
 ]

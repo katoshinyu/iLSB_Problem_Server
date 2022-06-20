@@ -13,6 +13,7 @@ reURL = list()
 
 def ProblemProcess(mondai_json, d_type):
         GlobalURL = mondai_json
+
         #課題, リポジトリのキーワードの情報, 展開されている課題の情報を分ける
         df_main = mondai_json[0]
         df_sub = pd.DataFrame(mondai_json[1])
@@ -94,11 +95,11 @@ def ProblemProcess(mondai_json, d_type):
 
         if len(ProblemList)==0:
                 print('divです')
-                if d_type == "div":
+                if d_type == "span":
                         ProblemList = {"Problem":'None', "Answer":'None',"Anaume":'None'}
                         return [ProblemList]
                 else:
-                        d_type = "div"
+                        d_type = "span"
                         ProblemList = ProblemProcess(mondai_json, d_type)
 
         #実験で問題制限かけるときにここの閾値をいじる

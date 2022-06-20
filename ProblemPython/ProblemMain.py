@@ -6,7 +6,9 @@ import json
 def main():
         #iLSBからの問題生成に必要な内容が記述されたjsonファイル
         #jf = "ProblemResource/mondai_resource.json"
-        jf = "/Users/katoushinyu/Desktop/iLSB_Problem_Server/ProblemResource/mondai_resource.json"
+        #jf = "ProblemResource/mondai_resource.json"
+        jf = "/Users/katoushinyu/Desktop/iLSB_system/iLSB_Problem_Server/ProblemResource/mondai_resource.json"
+        #jf = "../ProblemResource/mondai_resource.json"
         d_type = "p"
         #JSONデータを辞書型として扱えるように
         with open(jf,"r",encoding="utf-8") as mondai_txt:
@@ -14,20 +16,26 @@ def main():
                 mondai_json = json.loads(mondai_txt)
 
         ProblemArray = []
-
         #辞書型データををデータ処理の関数に渡す
+        #最新の選択されたノードの情報が詰まったJSONデータを引き渡すアルゴ
         for proInf in mondai_json:
                 ProblemInformation = ProblemDataProcess.ProblemProcess(proInf, d_type)
                 ProblemInformation.insert(0, proInf[0]["title"])
                 ProblemArray.append(ProblemInformation)
         #print(ProblemArray[0][0])
+        #最新のプログラムのアウトプット
         ProblemOutPut(ProblemArray)
+        '''ProblemInformation = ProblemDataProcess.ProblemProcess(mondai_json, d_type)
+        ProblemOutPut(ProblemInformation)
+        print(ProblemInformation)'''
 
 
 #ここでの関数の処理の結果がサーバー側に渡される
 def ProblemOutPut(ProblemData):
         #problem_path = "ProblemResource/ProblemInformation.json"
-        problem_path = "/Users/katoushinyu/Desktop/iLSB_Problem_Server/ProblemResource/ProblemInformation.json"
+        problem_path = "/Users/katoushinyu/Desktop/iLSB_system/iLSB_Problem_Server/ProblemResource/ProblemInformation.json"
+        #problem_path = "ProblemResource/ProblemInformation.json"
+        #problem_path = "../ProblemResource/ProblemInformation.json"
 
         #答えが格納された配列をJSONデータにし、更に見やすいようにインデントを設ける
         Problem_json = json.dumps(ProblemData, ensure_ascii = False)
